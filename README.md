@@ -8,7 +8,7 @@ python 3.10
 GPU, CUDAが使える環境(CPUでも処理は可能)
 
 ## 利用手順
-### 特徴量生成モデル
+### 特徴量生成モデル作成
 best_sentence_bert_model.binを作成します。  
 作成後、kitchen compassアプリケーション内に配置します。  
 
