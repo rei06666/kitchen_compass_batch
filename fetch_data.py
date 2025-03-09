@@ -83,6 +83,5 @@ def fetch_and_store_recipes():
 
 
 if __name__ == "__main__":
-    # fetch_and_store_categories()
-    # fetch_and_store_recipes()
-    print(conf.applicationid)
+    fetch_and_store_categories()
+    fetch_and_store_recipes()

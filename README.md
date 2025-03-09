@@ -18,12 +18,6 @@ best_sentence_bert_model.binを作成します。
 pip install -r requirements.txt
 ```
 
-- modelフォルダに移動し、以下を実行します
-```
-python sentence_bert_create_model.py
-```  
-
-- best_sentence_bert_model.binが作成されることを確認します
 
 ### レシピデータベース作成  
 レシピデータベースを作成します。取得したデータに前処理をかけたうえで、レシピをベクトルデータに変換します  
@@ -33,7 +27,7 @@ python sentence_bert_create_model.py
 class config: 
     def __init__(self):
         # 楽天レシピのアプリケーションID
-        self.applicationid = "ID"
+        self.applicationid = "<ID>"
 ```
 - レシピデータを取得しSQliteのデータベースに格納します  
 ```
@@ -44,7 +38,7 @@ python fetch_data.py
 ```
 python prepprocess_recipes.py
 ```
-- データをベクトル化し、データベースに格納します
+- データをベクトル化し、データベースに格納します。Sentence-Bertの学習済みモデルを使用しベクトル化しています
 ```
 python create_vector.py
 ```
